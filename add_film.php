@@ -6,25 +6,80 @@
     <title>add_film</title>
     <style>
 
-  body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 40px;
-    color: #333;
-    background-color: #be8dcdff;
-  }
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.header-2 {
+  width: 100%;
+  background-color: #9b0312;
+  padding: 12px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.header-2 .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  gap: 18px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #9b0312;
+}
+
+.judul {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fbbf24;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+
   h1{
     text-align: center;
     margin-bottom: 25px;
     font-size: 28px;
-    color: #222;
+    color: #ffffffff;
     font-weight: 600;
   }
 
 .form {
   max-width: 650px;
   margin: auto;
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.1); /* Putih 10% transparan */
   padding: 35px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
@@ -39,7 +94,7 @@
   display: block;
   font-weight: bold;
   margin: 12px 0 6px;
-  color: #444;
+  color: #fffefeff;
 }
 
 .form input[type="text"],
@@ -51,7 +106,7 @@
   border-radius: 8px;
   font-size: 15px;
   margin-bottom: 3px;
-  background: #fafafa;
+  background: #060606ff;
   transition: all 0.3s;
 }
 
@@ -83,7 +138,7 @@
   cursor: pointer;
   margin-top: 20px;
   transition: background 0.3s ease, transform 0.2s;
-  background-color: #2196f3;
+  background-color: #9b0312;
 }
 
 /* .form button:hover {
@@ -132,6 +187,17 @@
     </style>
 </head>
 <body>
+  <div class="header-2">
+      <div class="flex">
+        <a href="kartu.php" class="judul">Manajemen Bioskop</a>
+          <nav class="navbar">
+              <a href="home.php">Home</a>
+              <a href="tambah_data.php">Tambah Data</a>
+              <a href="daftar.php">Daftar Film</a>
+          </nav>
+      </div>
+  </div>
+
     <div class="form">
         <h1>Form Tambah Data</h1>
         <form action="">

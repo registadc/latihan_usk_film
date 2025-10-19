@@ -17,11 +17,11 @@
             justify-content: center;
             align-items: center;
             display: flex;
-            background-color: aliceblue;
+            background-color: black;
         }
 
         .login-box{
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.1); /* Putih 10% transparan */
             padding: 2.5rem 2rem;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -30,7 +30,7 @@
         }
 
         .login-box h1{
-            color: black;
+            color: white;
             font-size: 1.8rem;
             margin-bottom: 1.2rem;
             text-align: center;
@@ -38,20 +38,20 @@
 
         label{
             font-weight: 600;
-            color: black;
+            color: white;
             display: block;
             margin-bottom: 0.7rem;
         }
 
         .login-box p{
-            color: black;
+            color: white;
             margin-top: 1.2rem;
             text-align: center;
         }
 
         .login-box a{
             font-weight: bold;
-            color: #895599ff;
+            color: #fbbf24;
             text-decoration: none;
         }
 
@@ -68,14 +68,14 @@
             padding: 0.75rem;
             border-radius: 8px;
             border: none;
-            background-color: #be8dcdff;
+            background-color: #9b0312;
             color: white;
             font-weight: bold;
             cursor:pointer;
         }
 
         input[type="submit"]:hover{
-            background-color: #895599ff;
+            background-color: #6e1d1dff;
         }
     </style>
 </head>
